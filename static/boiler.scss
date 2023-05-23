@@ -1,0 +1,59 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+// All h have the same font
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: lightseagreen;
+}
+
+.main-frame {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem;
+    min-height: 85vh;
+
+    /* For small screens, reduce padding and margin horizontally */
+    @media only screen and (max-width: 600px) {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+
+a[href], a[href]:visited, summary {
+    color: navy;
+    font-weight: bold;
+    text-decoration: dotted underline;
+    cursor: pointer;
+
+    &:hover {
+        color: black;
+        text-decoration: solid underline;
+    }
+}
+
+/* Paragraphs of text */
+p {
+    text-align: justify;
+    text-justify: inner-word;
+}
+
+.post {
+    img {
+        max-width: 100%;
+    }
+}
+
+/* For large screens, p width is 50% of screen width */
+@media only screen and (min-width: 1200px) {
+    p {
+        width: 50%;
+    }
+}

@@ -1,0 +1,35 @@
+########
+# Info #
+########
+
+title: Vikrant Gajria
+email: vikrantgajria@gmail.com
+description: >-
+  Website with about me, blogs, and social links.
+
+home_links:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/vikrantgajria
+  - name: GitHub
+    url: https://www.github.com/xvjg
+  - name: Email
+    url: mailto:contact@vikrantgajria.com
+
+############
+# Defaults #
+############
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+##################
+# Build settings #
+##################
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.vikrantgajria.com" # the base hostname & protocol for your site, e.g. http://example.com
+plugins:
+  - jekyll-feed

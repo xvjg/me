@@ -1,0 +1,49 @@
+---
+title: Vikrant J. Gajria
+layout: default
+---
+
+<!-- Home page content -->
+<section>
+    <h2 >Compiler Engineer</h2>
+    <!-- <h2 style="color: blue">GPU Compiler Engineer, Qualcomm</h2> -->
+    <h2 style="color: #b1946c">Master of Science, Computer Science, Purdue</h2>
+    <br>
+</section>
+
+<section>
+    <h3>Links</h3>
+    <p>
+        <ul style="list-style-type: square;">
+            {% for link in site.home_links %}
+                <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </p>
+</section>
+
+<section>
+    <h3>About</h3>
+
+    <p>
+        I'm a joining Qualcomm, San Diego as GPU compiler engineer.
+
+        I graduated from Purdue University in Spring 2023.
+        My interests are in compilers, computer architecture, parallelism, programming languages, and other systems-related fields in CS.
+        I have a strong interest in the intersection of compilers and hardware.
+        I'm well experienced in C, C++, and Python through coursework, projects, internships and assistantships.
+        Some technologies I've worked with: LLVM, OpenMP, OpenMPI, Metal, CUDA, Pthreads, parser generators, SMT solvers, and more.
+    </p>
+</section>
+
+<section>
+    <h3>Notes</h3>
+
+    <p>
+        {% for post in site.posts %}
+        <article>
+            {{ post.date | date: "20%y-%b-%-d" }} | <a href="{{ post.url }}">{{ post.title }}</a> 
+        </article>
+        {% endfor %}
+    </p>
+</section>

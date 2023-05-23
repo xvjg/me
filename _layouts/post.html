@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section>
+    {% if page.categories.size > 0 %}
+        Categories:
+        {% for category in page.categories %}
+            <a href="/categories/{{ category }}">{{ category }}</a>
+        {% endfor %}
+    {% endif %}
+
+    {% if page.tags.size > 0 %}
+        <br>
+        Tags:
+        {% for tag in page.tags %}
+            <a href="/tags/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+    {% endif %}
+</section>
+
+<main class="post">
+{{ content }}
+</main>
+
+<div>
+    Please email me at <a href="mailto:{{ site.email }}">{{ site.email }}</a> if you have any questions, comments, corrections or suggestions.
+</div>
